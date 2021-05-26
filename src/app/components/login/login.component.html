@@ -1,0 +1,29 @@
+<div class="login-box">
+    <h2>Enter verification code</h2>
+    <p>
+        Please enter the 6-digit verification code sent to
+        <b>{{userEmail}}</b>. It might take up to 5 min. to
+        receive the email.
+    </p>
+    <p>
+        Didn’t receive a code? <a>Send again</a>
+    </p>
+    <form appOtpAutoFocus #otpFormEl [formGroup]="otpForm">
+        <span formArrayName="otp" *ngFor="let digit of otpFormArray.controls; let i = index; let isLast = last;">
+            <span [formGroupName]="i">
+                <input id={{i}} appPreventPaste #digit min="0" max="9" type="number" autocomplete="off" value={{i}}
+                formControlName="digit" [ngClass]="{'otp-left-radius': i === 0 || i === 3, 
+                'otp-right-radius': i === 2 || i === 5,
+                 'otp-no-border': i !== 2 && i !== 5 }" class="otp-digit-control" >
+                <span class="otp-separator" *ngIf="i === 2"> - </span>
+            </span>
+        </span>
+        <div class="button-group">
+            <button #submit class="submit-button" (click)="onOtpSubmit()">Continue</button>
+        </div>
+    </form>
+
+    <p>
+        Wrong email? Contact November First support
+    </p>
+</div>

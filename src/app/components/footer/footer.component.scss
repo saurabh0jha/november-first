@@ -1,0 +1,16 @@
+
+
+.footer-company-name {
+  display: flex;
+  justify-content: space-evenly;
+  width: 17rem;
+  font-size: 0.75rem;
+  align-items: center;
+  font-weight: 600;
+  color: #168a75;
+
+  span {
+    color: #168a75;
+    font-size: 0.25rem;
+  }
+}

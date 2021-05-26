@@ -1,14 +1,25 @@
 # NovemberFirstOtp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+OTP based User friendly login page. Features:
+
+- Uses angular reactive forms.
+- User is not be able to paste a copied OTP into the form.
+- Typing in any box takes the focus automatically to the next box and so on.
+- Pressing delete or backspace deletes current value and go to previous box Re-typing through boxes changes the previous values.
+- Clicking arrow buttonsin the boxes takes user in the direction of arrow.
+- After all the inputs are filled continue button is clicked automatically.
+- A dummy API is called on submit button. i.e. - www.google.com
+- Includes unit tests
+
+## Installation and Setup
+- install node and node virtual environment if needed
+- cd to project directory
+- npm install
+- npm install -g @angular/cli
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -17,10 +28,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 

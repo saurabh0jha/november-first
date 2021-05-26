@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #efeff7;
+  font-family: Roboto, system-ui, sans-serif;
+  font-size: 81.25%;
+  color: #526761;
+}
+
+.company-image {
+  height: 18px;
+}
+
+.app-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-footer{
+  position: fixed;
+  bottom: 1.5rem;
+  left: calc(50% - 11rem);
+}

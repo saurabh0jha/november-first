@@ -1,0 +1,98 @@
+.login-box {
+  width: 25rem;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px 2px #d2d4d4;
+  text-align: center;
+}
+
+h2{
+  font-weight: 500;
+}
+
+p {
+  width: 350px;
+  margin: 2rem auto;
+  color: #716f6f;
+}
+
+b {
+  color: rgba(44, 44, 44, 0.924)
+}
+
+a {
+  color: #077964;
+  cursor: pointer;
+}
+
+.otp-separator {
+  font-size: 2.5rem;
+  padding: 0;
+  font-weight: 200;
+  color: #b3b0b0;
+  vertical-align: sub;
+  line-height: 1rem;
+}
+
+.otp-digit-control {
+  width: 2.5rem;
+  height: 3rem;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+.otp-digit-control {
+  &:active,
+  &:focus-visible {
+    border: 1px solid #363636;
+    outline: none;
+  }
+}
+
+.otp-left-radius {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.otp-right-radius {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.otp-no-border {
+  border-right: 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.submit-button {
+  padding: 0.65rem 1rem;
+  width: 70%;
+  border-radius: 1.2rem;
+  background-color: #00d2abeb;
+  border: 0;
+  color: white;
+  letter-spacing: 0.02rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
