@@ -1,7 +1,12 @@
 # NovemberFirstOtp
 
-OTP based User friendly login page. Features:
+OTP based User friendly login page. 
 
+GitHub Repo: https://github.com/saurabh0jha/november-first
+November First OTP App: http://november-first.s3-website.us-east-2.amazonaws.com/
+November First Coverage: http://november-first-coverage.s3-website.us-east-2.amazonaws.com/
+
+## Features:
 - Uses angular reactive forms.
 - User is not be able to paste a copied OTP into the form.
 - Typing in any box takes the focus automatically to the next box and so on.
